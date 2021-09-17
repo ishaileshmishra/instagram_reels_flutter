@@ -11,6 +11,7 @@ This project is a starting point for a Flutter application.
 
 ![image info](assets/readme/image.png)
 
+![](assets/readme/content.gif)
 
 ![image info](assets/readme/image1.png)
 

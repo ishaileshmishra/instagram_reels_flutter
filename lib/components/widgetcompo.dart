@@ -11,7 +11,7 @@ Column likeShareCommentSave() {
       SizedBox(height: 25),
       iconDetail(CupertinoIcons.arrow_turn_up_right, ''),
       SizedBox(height: 25),
-      Icon(CupertinoIcons.ellipsis_vertical, size: 22),
+      Icon(CupertinoIcons.ellipsis_vertical, size: 22, color: Colors.white),
     ],
   );
 }
@@ -19,12 +19,14 @@ Column likeShareCommentSave() {
 Column iconDetail(IconData icon, String number) {
   return Column(
     children: [
-      Icon(icon, size: 33, color: Colors.black,),
+      Icon(icon, size: 33, color: Colors.white,
+      ),
       Text(
         '$number',
         style: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.normal,
+          color: Colors.white
         ),
       )
     ],
@@ -45,17 +47,18 @@ class _CommentWithPublisherState extends State<CommentWithPublisher> {
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Row(
               children: [
-                Icon(CupertinoIcons.arrow_left),
+                Icon(CupertinoIcons.arrow_left,color: Colors.white),
                 SizedBox(width: 20),
                 Text(
                   'Reels',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.normal,
+                    color: Colors.white,
                   ),
                 ),
                 Spacer(),
-                Icon(CupertinoIcons.camera),
+                Icon(CupertinoIcons.camera, color: Colors.white),
               ],
             ),
           ),
@@ -74,11 +77,11 @@ class _CommentWithPublisherState extends State<CommentWithPublisher> {
                         'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
                         30),
                     SizedBox(width: 8.0),
-                    Text('indian music talent'),
+                    Text('indian music talent', style: TextStyle(color: Colors.white)),
                     SizedBox(width: 8.0),
                     Text(
                       'Follow',
-                      style: blackText,
+                      style: textStyle,
                     )
                   ],
                 ),
@@ -87,7 +90,7 @@ class _CommentWithPublisherState extends State<CommentWithPublisher> {
                   children: [
                     Text(
                       'Tag someone special 😍 🔥 💡... ',
-                      style: blackText,
+                      style: textStyle,
                     ),
                     Text(
                       'more',
@@ -100,7 +103,7 @@ class _CommentWithPublisherState extends State<CommentWithPublisher> {
                   children: [
                     Text(
                       'Anoop Shankar Tu Mile Dil Khile ',
-                      style: blackText,
+                      style: textStyle,
                     ),
                     Spacer(),
                     rectImage(
@@ -115,11 +118,11 @@ class _CommentWithPublisherState extends State<CommentWithPublisher> {
       );
 
   TextStyle greyText = TextStyle(
-    color: Colors.grey,
+    color: Colors.white,
   );
 
-  TextStyle blackText = TextStyle(
-    color: Colors.black,
+  TextStyle textStyle = TextStyle(
+    color: Colors.white,
     fontSize: 14,
   );
 }
